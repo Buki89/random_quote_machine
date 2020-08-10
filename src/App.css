@@ -1,38 +1,64 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #ffcc99 33%, #ff9966 89%);
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Buttons {
+  display: flex;
+  margin: 20px 0 0 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.FirstGroup {
+  display: flex;
+  flex: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SecondGroup {
+  display: flex;
+}
+
+.Box {
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 500px;
+  height: auto;
+  padding: 30px;
+  background-color: white;
+}
+
+.Author {
+  text-align: end;
+  margin: 10px 0;
+  font-family: "Audiowide", cursive;
+  font-size: 20px;
+}
+
+.Quote {
+  font-size: 24px;
+  font-family: "Oleo Script", cursive;
+}
+
+.Button {
+  background-color: #ff9966;
+  color: #fff;
+  height: 40px;
+  width: 100px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+}
+.Link {
+  height: 40px;
+  width: 40px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #ff9966;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  margin: 0 5px;
 }
